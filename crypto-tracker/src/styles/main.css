@@ -1,0 +1,28 @@
+.list-container {
+  display: flex;
+  margin-top: 2%;
+  width: 430px;
+  height: 420px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  color: rgba(255, 255, 255, 0.13);
+}
+
+.list {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  color: white;
+}
+.list li {
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #080710;
+}/*# sourceMappingURL=main.css.map */
