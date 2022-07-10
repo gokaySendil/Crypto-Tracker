@@ -16,3 +16,4 @@ This is a crypto currecy tracker app to learn how to use an API in React js proj
 ## Used Packages
 - [coinlayer API ](https://coinlayer.com)
 - [Sass&Scss](https://sass-lang.com/guide)
+- [Axios](https://www.npmjs.com/package/axios)
