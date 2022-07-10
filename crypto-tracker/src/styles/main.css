@@ -1,8 +1,13 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+h1 {
+  color: white;
+}
+
 .list-container {
-  display: flex;
+  display: block;
   margin-top: 2%;
-  width: 430px;
-  height: 420px;
+  width: 100%;
+  height: 430px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -12,17 +17,66 @@
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   color: rgba(255, 255, 255, 0.13);
 }
+@media (min-width: 480px) {
+  .list-container {
+    width: 430px;
+    height: 430px;
+  }
+}
 
 .list {
-  padding: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
   width: 100%;
+  padding-left: 0;
+  margin: 0 0;
   list-style: none;
   color: white;
 }
-.list li {
-  flex-wrap: wrap;
+
+.list-item {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: space-around;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 0 0;
+  font-size: 10px;
+  width: 100%;
+}
+
+.button {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background-color: rgba(160, 34, 34, 0.5);
+  color: rgba(212, 212, 16, 0.733);
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #080710;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }/*# sourceMappingURL=main.css.map */
